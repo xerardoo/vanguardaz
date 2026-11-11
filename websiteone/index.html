@@ -1,0 +1,1008 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Vanguard Window Solutions | Premium Windows &amp; Doors in Phoenix, AZ</title>
+  <meta name="description" content="Vanguard Window Solutions LLC installs premium residential and commercial windows and doors across Phoenix, Avondale and the surrounding Arizona cities. Request a free quote.">
+  <meta name="theme-color" content="#0B1638">
+  <link rel="icon" href="img/logo-mark.png">
+  <meta property="og:title" content="Vanguard Window Solutions">
+  <meta property="og:description" content="Premium residential and commercial windows and doors across the Phoenix metro area.">
+  <meta property="og:image" content="img/gallery/IMG_20260811_084522_026-l.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/gallery/IMG_20260811_084522_026-m.jpg"
+        imagesrcset="img/gallery/IMG_20260811_084522_026-m.jpg 900w, img/gallery/IMG_20260811_084522_026-l.jpg 1800w" imagesizes="100vw">
+  <style>
+    :root {
+      --navy: #13235B;          /* logo frame */
+      --navy-deep: #0B1638;
+      --steel: #3E5F8E;         /* logo muntins */
+      --steel-light: #8FA8CC;
+      --carbonized: #5C5E62;    /* Ford Carbonized Gray */
+      --carbonized-dark: #2E2F32;
+      --paper: #FFFFFF;
+      --mist: #F3F4F6;
+      --line: #E3E5E9;
+      --ink: #1E2024;
+      --ink-soft: rgba(255, 255, 255, .74);
+      --gutter: clamp(16px, 4vw, 40px);
+      --max: 1200px;
+      --serif: "Playfair Display", Georgia, "Times New Roman", serif;
+      --sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+    body {
+      margin: 0;
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--ink);
+      background: var(--paper);
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; }
+
+    .container {
+      width: 100%;
+      max-width: calc(var(--max) + 2 * var(--gutter));
+      margin: 0 auto;
+      padding-inline: var(--gutter);
+    }
+
+    h1, h2, h3 { font-family: var(--serif); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+    h2 { font-size: clamp(2rem, 4.5vw, 3rem); line-height: 1.1; color: var(--navy); }
+    .section { padding-block: clamp(72px, 10vw, 128px); }
+    .section-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px 32px; margin-bottom: 40px; }
+    .section-head p { margin: 12px 0 0; max-width: 52ch; color: var(--carbonized); font-size: 1.0625rem; }
+
+    /* ---------- Buttons ---------- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 52px;
+      padding: 14px 26px;
+      border-radius: 999px;
+      border: 2px solid transparent;
+      font: 600 1rem/1 var(--sans);
+      text-decoration: none;
+      cursor: pointer;
+      transition: transform .2s ease, background-color .2s ease, color .2s ease, border-color .2s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn:active { transform: none; }
+    .btn:focus-visible { outline: 3px solid var(--steel-light); outline-offset: 3px; }
+    .btn svg { width: 18px; height: 18px; flex: none; }
+    .btn-primary { background: var(--navy); color: #fff; }
+    .btn-primary:hover { background: var(--navy-deep); }
+    .btn-light { background: #fff; color: var(--navy); }
+    .btn-light:hover { background: var(--mist); }
+    .btn-ghost { border-color: rgba(255, 255, 255, .5); color: #fff; }
+    .btn-ghost:hover { border-color: #fff; background: rgba(255, 255, 255, .08); }
+
+    /* ---------- Header ---------- */
+    .site-header {
+      position: sticky;
+      top: env(safe-area-inset-top, 0px);
+      z-index: 50;
+      background: var(--paper);
+      transition: box-shadow .25s ease;
+    }
+    .site-header.is-scrolled { box-shadow: 0 1px 0 var(--line), 0 8px 24px -16px rgba(11, 22, 56, .35); }
+    .nav { display: flex; align-items: center; gap: 24px; min-height: 72px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--navy); margin-right: auto; }
+    .brand img { width: 40px; height: 40px; }
+    .brand-name { font-family: var(--serif); font-weight: 700; font-size: 1.375rem; letter-spacing: .02em; line-height: 1; }
+    .brand-sub { display: block; font-family: var(--sans); font-size: .6875rem; font-weight: 500; letter-spacing: .14em; color: var(--steel); margin-top: 4px; }
+    .nav-links { display: flex; gap: 28px; list-style: none; margin: 0; padding: 0; }
+    .nav-links a { text-decoration: none; font-weight: 500; color: var(--carbonized-dark); }
+    .nav-links a:hover { color: var(--navy); }
+    .nav-phone { font-weight: 600; text-decoration: none; color: var(--navy); white-space: nowrap; }
+    .nav .btn { min-height: 44px; padding: 10px 20px; font-size: .9375rem; }
+
+    /* ---------- Hero ---------- */
+    .hero {
+      position: relative;
+      display: grid;
+      align-items: end;
+      min-height: min(88vh, 820px);
+      color: #fff;
+      background: var(--navy-deep);
+      overflow: hidden;
+    }
+    .hero-media, .hero-media img { position: absolute; inset: 0; width: 100%; height: 100%; }
+    .hero-media img { object-fit: cover; object-position: center 60%; animation: drift 18s ease-out both; }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(11, 22, 56, .15) 0%, rgba(11, 22, 56, .55) 45%, rgba(11, 22, 56, .92) 100%);
+    }
+    .hero-content { position: relative; z-index: 1; padding-block: 140px clamp(48px, 8vw, 88px); }
+    .hero h1 { font-size: clamp(2.5rem, 7vw, 5.25rem); line-height: 1.02; max-width: 16ch; }
+    .hero-lead { margin: 24px 0 0; max-width: 48ch; font-size: clamp(1.0625rem, 1.6vw, 1.25rem); color: rgba(255, 255, 255, .88); }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .hero-rating { display: inline-flex; align-items: center; gap: 10px; margin-top: 28px; font-size: .9375rem; color: rgba(255, 255, 255, .85); text-decoration: none; }
+    .hero-rating strong { color: #fff; font-size: 1.125rem; }
+
+    .stars { display: inline-flex; gap: 2px; color: #F5B83D; }
+    .stars svg { width: 18px; height: 18px; }
+    .stars .off { color: rgba(127, 127, 127, .35); }
+
+    /* ---------- Services band ---------- */
+    .band { background: var(--navy); color: #fff; }
+    .band ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 28px 40px;
+      margin: 0 auto;
+      padding-block: 40px;
+      list-style: none;
+    }
+    .band strong { display: block; font-family: var(--serif); font-size: 1.25rem; margin-bottom: 4px; }
+    .band span { color: var(--ink-soft); font-size: .9375rem; }
+
+    /* ---------- Gallery ---------- */
+    .filters { display: flex; flex-wrap: wrap; gap: 8px; }
+    .filters button {
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 0;
+      background: var(--mist);
+      color: var(--carbonized-dark);
+      font: 500 .9375rem/1 var(--sans);
+      cursor: pointer;
+      transition: background-color .2s ease, color .2s ease;
+    }
+    .filters button:hover { background: var(--line); }
+    .filters button[aria-pressed="true"] { background: var(--navy); color: #fff; }
+    .filters button:focus-visible { outline: 3px solid var(--steel-light); outline-offset: 2px; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-auto-flow: dense;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .gallery li { position: relative; }
+    .gallery button {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      border: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      background: var(--mist);
+      cursor: zoom-in;
+      aspect-ratio: 16 / 10;
+    }
+    .gallery img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s cubic-bezier(.2, .7, .2, 1); }
+    .gallery button:hover img { transform: scale(1.04); }
+    .gallery button:focus-visible { outline: 3px solid var(--steel); outline-offset: 3px; }
+    .gallery .cap {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      padding: 40px 16px 14px;
+      text-align: left;
+      font-size: .875rem;
+      font-weight: 500;
+      color: #fff;
+      background: linear-gradient(180deg, transparent, rgba(11, 22, 56, .9) 70%);
+    }
+    .gallery .tag {
+      display: inline-block;
+      margin-bottom: 4px;
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--steel-light);
+    }
+    /* tablet: the first photo runs full width above a two-column grid */
+    @media (min-width: 600px) and (max-width: 899px) {
+      .gallery { grid-template-columns: repeat(2, 1fr); }
+      .gallery li.is-featured { grid-column: span 2; }
+    }
+    /* desktop: four columns, the first photo 2x2; the script widens the last photos so no row is left half empty */
+    @media (min-width: 900px) {
+      .gallery { grid-template-columns: repeat(4, 1fr); }
+      .gallery li.is-featured { grid-column: span 2; grid-row: span 2; }
+      .gallery li.is-featured button { aspect-ratio: auto; }
+      .gallery li.is-featured .cap { font-size: 1rem; padding: 64px 22px 18px; }
+      .gallery li.is-wide { grid-column: span 2; }
+      .gallery li.is-wide button { aspect-ratio: 32 / 9.6; }
+    }
+
+    /* ---------- Lightbox ---------- */
+    .lightbox {
+      width: 100%;
+      max-width: none;
+      height: 100%;
+      max-height: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: rgba(8, 14, 34, .96);
+      color: #fff;
+    }
+    .lightbox::backdrop { background: rgba(8, 14, 34, .96); }
+    .lightbox[open] { display: grid; grid-template-rows: 1fr auto; animation: fade .25s ease; }
+    .lb-stage { position: relative; display: grid; place-items: center; padding: 64px var(--gutter) 12px; min-height: 0; touch-action: pan-y; }
+    .lb-stage img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 6px; }
+    .lb-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px var(--gutter) calc(20px + env(safe-area-inset-bottom, 0px)); }
+    .lb-caption { margin: 0; font-size: .9375rem; color: var(--ink-soft); }
+    .lb-count { font-variant-numeric: tabular-nums; color: #fff; margin-right: 10px; font-weight: 600; }
+    .lb-btn {
+      display: grid;
+      place-items: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 0;
+      background: rgba(255, 255, 255, .1);
+      color: #fff;
+      cursor: pointer;
+      transition: background-color .2s ease;
+    }
+    .lb-btn:hover { background: rgba(255, 255, 255, .2); }
+    .lb-btn:focus-visible { outline: 2px solid var(--steel-light); outline-offset: 2px; }
+    .lb-btn svg { width: 22px; height: 22px; }
+    .lb-close { position: absolute; top: calc(12px + env(safe-area-inset-top, 0px)); right: var(--gutter); }
+    .lb-nav { display: flex; gap: 8px; flex: none; }
+
+    /* ---------- Reviews ---------- */
+    .reviews { background: var(--navy-deep); color: #fff; }
+    .reviews h2 { color: #fff; }
+    .reviews .section-head p { color: var(--ink-soft); }
+    .rv-summary { display: flex; align-items: center; gap: 12px; margin-top: 16px; color: var(--ink-soft); }
+    .rv-summary strong { font-size: 2rem; line-height: 1; color: #fff; font-family: var(--serif); }
+    .reviews .stars .off { color: rgba(255, 255, 255, .25); }
+
+    .rv-layout { display: grid; gap: 32px; }
+    .rv-track { display: grid; margin: 0; padding: 0; list-style: none; touch-action: pan-y; }
+    /* all slides share one cell, so the box keeps the height of the tallest review */
+    .rv-slide {
+      grid-area: 1 / 1;
+      padding: clamp(24px, 4vw, 44px);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .06);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(20px);
+      transition: opacity .5s ease, transform .5s ease, visibility 0s linear .5s;
+    }
+    .rv-slide.is-active { opacity: 1; visibility: visible; transform: none; transition: opacity .5s ease, transform .5s ease; }
+    .rv-text {
+      margin: 16px 0 24px;
+      font-family: var(--serif);
+      font-weight: 600;
+      font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+      line-height: 1.45;
+      color: #fff;
+      display: -webkit-box;
+      -webkit-line-clamp: 7;
+      line-clamp: 7;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .rv-author { display: flex; align-items: center; gap: 12px; font-size: .9375rem; color: var(--ink-soft); }
+    .rv-author img, .rv-initial { flex: none; width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
+    .rv-initial { display: grid; place-items: center; background: var(--steel); color: #fff; font-weight: 600; }
+    .rv-author b { display: block; color: #fff; font-weight: 600; }
+    .rv-controls { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 20px; }
+    .rv-dots { display: flex; gap: 6px; }
+    .rv-dots button {
+      width: 8px; height: 8px; padding: 0; border: 0; border-radius: 999px;
+      background: rgba(255, 255, 255, .3); cursor: pointer;
+      transition: width .3s ease, background-color .3s ease;
+    }
+    .rv-dots button[aria-current="true"] { width: 24px; background: #fff; }
+    .rv-arrows { display: flex; gap: 8px; }
+    .rv-dots button:focus-visible { outline: 2px solid var(--steel-light); outline-offset: 3px; }
+    .rv-attrib { margin: 16px 0 0; font-size: .8125rem; color: rgba(255, 255, 255, .5); }
+
+    .rv-aside {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      padding: clamp(24px, 4vw, 40px);
+      border-radius: 18px;
+      background: var(--steel);
+    }
+    .rv-aside h3 { font-size: 1.5rem; line-height: 1.2; }
+    .rv-aside p { margin: 0; color: rgba(255, 255, 255, .88); }
+    .rv-aside .btn { align-self: flex-start; }
+    @media (min-width: 900px) {
+      .rv-layout { grid-template-columns: 1.7fr 1fr; align-items: start; }
+      /* until reviews load, the review prompt sits alone */
+      .rv-layout:has(> .rv-carousel[hidden]) { grid-template-columns: minmax(0, 640px); }
+    }
+
+    /* ---------- Quote / lead form ---------- */
+    .quote { background: var(--mist); }
+    .quote-grid { display: grid; gap: 40px; }
+    .quote-info p { color: var(--carbonized); font-size: 1.0625rem; margin: 16px 0 0; max-width: 44ch; }
+    .contact-list { display: grid; gap: 16px; margin: 32px 0 0; padding: 0; list-style: none; }
+    .contact-list li { display: flex; gap: 14px; align-items: flex-start; }
+    .contact-list .icon {
+      flex: none; display: grid; place-items: center;
+      width: 44px; height: 44px; border-radius: 12px;
+      background: var(--navy); color: #fff;
+    }
+    .contact-list .icon svg { width: 20px; height: 20px; }
+    .contact-list small { display: block; color: var(--carbonized); font-size: .8125rem; }
+    .contact-list a, .contact-list b { font-weight: 600; color: var(--navy); text-decoration: none; }
+    .contact-list a:hover { text-decoration: underline; }
+    .map { margin-top: 28px; border-radius: 14px; overflow: hidden; aspect-ratio: 16 / 9; background: var(--line); }
+    .map iframe { width: 100%; height: 100%; border: 0; display: block; }
+
+    .form-card {
+      background: var(--paper);
+      border-radius: 20px;
+      padding: clamp(24px, 4vw, 44px);
+      box-shadow: 0 30px 60px -36px rgba(11, 22, 56, .35);
+    }
+    .form-card h3 { font-size: 1.75rem; color: var(--navy); margin-bottom: 6px; }
+    .form-card > p { margin: 0 0 24px; color: var(--carbonized); }
+    .fields { display: grid; gap: 16px; grid-template-columns: 1fr 1fr; }
+    .field { display: grid; gap: 6px; grid-column: span 2; }
+    .field.half { grid-column: span 1; }
+    .field label, .field legend { font-size: .875rem; font-weight: 600; color: var(--carbonized-dark); padding: 0; }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      min-height: 50px;
+      padding: 12px 14px;
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      background: var(--paper);
+      font: 400 1rem/1.4 var(--sans);
+      color: var(--ink);
+      transition: border-color .2s ease, box-shadow .2s ease;
+    }
+    .field textarea { min-height: 110px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      outline: none;
+      border-color: var(--steel);
+      box-shadow: 0 0 0 4px rgba(62, 95, 142, .18);
+    }
+    .field input:user-invalid { border-color: #B3261E; }
+    fieldset.field { border: 0; margin: 0; padding: 0; }
+    .choices { display: flex; flex-wrap: wrap; gap: 8px; }
+    .choices label { position: relative; font-weight: 500; }
+    .choices input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+    .choices span {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1.5px solid var(--line);
+      cursor: pointer;
+      transition: background-color .2s ease, border-color .2s ease, color .2s ease;
+    }
+    .choices input:checked + span { background: var(--navy); border-color: var(--navy); color: #fff; }
+    .choices input:focus-visible + span { outline: 3px solid var(--steel-light); outline-offset: 2px; }
+    .form-card .btn { width: 100%; margin-top: 8px; }
+    .form-note { margin: 12px 0 0; font-size: .8125rem; color: var(--carbonized); text-align: center; }
+    .form-status { margin: 16px 0 0; padding: 14px 16px; border-radius: 10px; font-size: .9375rem; }
+    .form-status.ok { background: #E7F3EC; color: #1D5B36; }
+    .form-status.err { background: #FBEAEA; color: #8C1D18; }
+    .hp { position: absolute; left: -9999px; }
+
+    @media (min-width: 900px) {
+      .quote-grid { grid-template-columns: 1fr 1.1fr; gap: 64px; align-items: start; }
+    }
+
+    /* ---------- Footer ---------- */
+    .site-footer { background: var(--carbonized-dark); color: rgba(255, 255, 255, .7); padding-block: 56px calc(32px + env(safe-area-inset-bottom, 0px)); font-size: .9375rem; }
+    .footer-name { font-family: var(--serif); font-weight: 700; color: #fff; font-size: clamp(2.25rem, 8vw, 5rem); line-height: 1; letter-spacing: .01em; margin: 0 0 28px; }
+    .footer-grid { display: flex; flex-wrap: wrap; gap: 20px 48px; justify-content: space-between; }
+    .site-footer a { color: #fff; text-decoration: none; }
+    .site-footer a:hover { text-decoration: underline; }
+    .footer-copy { margin-top: 32px; font-size: .8125rem; color: rgba(255, 255, 255, .45); }
+
+    /* ---------- Mobile ---------- */
+    .call-bar { display: none; }
+    @media (max-width: 899px) {
+      .nav-links, .nav-phone { display: none; }
+      .hero { min-height: min(82svh, 720px); }
+      .hero-content { padding-top: 120px; }
+      .hero-actions .btn { flex: 1 1 200px; }
+      body { padding-bottom: calc(76px + env(safe-area-inset-bottom, 0px)); }
+      .call-bar {
+        display: flex;
+        gap: 10px;
+        position: fixed;
+        left: 0; right: 0; bottom: 0;
+        z-index: 40;
+        padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px));
+        background: var(--paper);
+        box-shadow: 0 -8px 24px -12px rgba(11, 22, 56, .35);
+      }
+      .call-bar .btn { flex: 1; min-height: 50px; }
+      .call-bar .btn-outline { border-color: var(--navy); color: var(--navy); background: #fff; }
+    }
+    @media (max-width: 560px) {
+      .fields { grid-template-columns: 1fr; }
+      .field, .field.half { grid-column: span 1; }
+      .brand-sub { display: none; }
+      .nav .btn { display: none; }
+      .lb-caption { font-size: .8125rem; }
+    }
+
+    /* ---------- Motion ---------- */
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1); }
+    .reveal.is-in { opacity: 1; transform: none; }
+    .no-js .reveal { opacity: 1; transform: none; }
+    @keyframes drift { from { transform: scale(1.08); } to { transform: scale(1); } }
+    @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body class="no-js">
+  <header class="site-header" id="top">
+    <nav class="container nav" aria-label="Main">
+      <a class="brand" href="#top" aria-label="Vanguard Window Solutions, home">
+        <img src="img/logo-mark.png" alt="" width="40" height="40">
+        <span><span class="brand-name">VANGUARD</span><span class="brand-sub">WINDOW SOLUTIONS</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#work">Our work</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#quote">Contact</a></li>
+      </ul>
+      <a class="nav-phone" href="tel:+14804068351">(480) 406-8351</a>
+      <a class="btn btn-primary" href="#quote">Free quote</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <img src="img/gallery/IMG_20260811_084522_026-m.jpg"
+             srcset="img/gallery/IMG_20260811_084522_026-m.jpg 900w, img/gallery/IMG_20260811_084522_026-l.jpg 1800w"
+             sizes="100vw" alt="Four-panel black sliding glass wall opening" fetchpriority="high">
+      </div>
+      <div class="container hero-content">
+        <h1 id="hero-title">Premium windows &amp; doors, installed right.</h1>
+        <p class="hero-lead">Residential and commercial installation across Phoenix and every city around the Valley. From new construction to full replacements.</p>
+        <div class="hero-actions">
+          <a class="btn btn-light" href="#quote">
+            Get a free quote
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#work">See our work</a>
+        </div>
+        <a class="hero-rating" id="hero-rating" href="#reviews" hidden>
+          <strong id="hero-rating-value"></strong>
+          <span class="stars" id="hero-rating-stars" aria-hidden="true"></span>
+          <span id="hero-rating-count"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="band" aria-label="What we install">
+      <ul class="container">
+        <li><strong>Residential</strong><span>Custom homes, remodels and window replacements.</span></li>
+        <li><strong>Commercial</strong><span>Storefronts, offices and multi-unit projects.</span></li>
+        <li><strong>Windows</strong><span>Casement, picture, corner and specialty units.</span></li>
+        <li><strong>Doors</strong><span>Multi-panel sliders, patio and entry doors.</span></li>
+      </ul>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 id="work-title">Recent projects</h2>
+            <p>Remodels homes and jobs new houses across the Phoenix area. Tap any photo to see it full size.</p>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button type="button" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" data-filter="finished" aria-pressed="false">Remodels</button>
+            <button type="button" data-filter="progress" aria-pressed="false">New Houses</button>
+          </div>
+        </div>
+
+        <ul class="gallery" id="gallery">
+          <li class="reveal is-featured" data-cat="finished">
+              <button type="button" data-full="img/gallery/IMG_20260811_085445_036-l.jpg">
+                <img src="img/gallery/IMG_20260811_085445_036-m.jpg" srcset="img/gallery/IMG_20260811_085445_036-m.jpg 900w, img/gallery/IMG_20260811_085445_036-l.jpg 1800w" sizes="(min-width: 900px) 66vw, 100vw" alt="Bedroom with a black four-panel sliding door overlooking the pool and mountains" loading="lazy" width="900" height="506">
+                <span class="cap"><span class="tag">Finished</span><br>Four-panel slider</span>
+              </button>
+          </li>
+          <li class="reveal" data-cat="finished">
+              <button type="button" data-full="img/gallery/IMG_20260811_084522_026-l.jpg">
+                <img src="img/gallery/IMG_20260811_084522_026-m.jpg" srcset="img/gallery/IMG_20260811_084522_026-m.jpg 900w, img/gallery/IMG_20260811_084522_026-l.jpg 1800w" sizes="(min-width: 900px) 33vw, 100vw" alt="Great room with a sliding glass wall to the pool and square clerestory windows above" loading="lazy" width="900" height="506">
+                <span class="cap"><span class="tag">Finished</span><br>Sliding glass wall and clerestory windows</span>
+              </button>
+          </li>
+          <li class="reveal" data-cat="finished">
+              <button type="button" data-full="img/gallery/IMG_20260811_084412_023-l.jpg">
+                <img src="img/gallery/IMG_20260811_084412_023-m.jpg" srcset="img/gallery/IMG_20260811_084412_023-m.jpg 900w, img/gallery/IMG_20260811_084412_023-l.jpg 1800w" sizes="(min-width: 900px) 33vw, 100vw" alt="Stone courtyard facade with black multi-panel doors and a glass entry door" loading="lazy" width="900" height="506">
+                <span class="cap"><span class="tag">Finished</span><br>Courtyard doors</span>
+              </button>
+          </li>
+          <li class="reveal" data-cat="finished">
+              <button type="button" data-full="img/gallery/IMG_20260811_084422_024-l.jpg">
+                <img src="img/gallery/IMG_20260811_084422_024-m.jpg" srcset="img/gallery/IMG_20260811_084422_024-m.jpg 900w, img/gallery/IMG_20260811_084422_024-l.jpg 1800w" sizes="(min-width: 900px) 33vw, 100vw" alt="Covered patio with a black sliding door and a matching glass entry door" loading="lazy" width="900" height="506">
+                <span class="cap"><span class="tag">Finished</span><br>Patio slider and matching entry door</span>
+              </button>
+          </li>
+          <li class="reveal" data-cat="progress">
+              <button type="button" data-full="img/gallery/IMG_20260827_114956_009-l.jpg">
+                <img src="img/gallery/IMG_20260827_114956_009-m.jpg" srcset="img/gallery/IMG_20260827_114956_009-m.jpg 900w, img/gallery/IMG_20260827_114956_009-l.jpg 1800w" sizes="(min-width: 900px) 33vw, 100vw" alt="Corner windows installed and flashed on a home under construction" loading="lazy" width="900" height="506">
+                <span class="cap"><span class="tag">Finished</span><br>Corner window install, flashed and sealed</span>
+              </button>
+          </li>
+          <li class="reveal" data-cat="progress">
+              <button type="button" data-full="img/gallery/IMG_20260827_115115_012-l.jpg">
+                <img src="img/gallery/IMG_20260827_115115_012-m.jpg" srcset="img/gallery/IMG_20260827_115115_012-m.jpg 900w, img/gallery/IMG_20260827_115115_012-l.jpg 1800w" sizes="(min-width: 900px) 33vw, 100vw" alt="Exterior wall with newly installed windows on a hillside home under construction" loading="lazy" width="900" height="506">
+                <span class="cap"><span class="tag">Finished</span><br>Window install, flashed and sealed</span>
+              </button>
+          </li>
+          <li class="reveal" data-cat="progress">
+              <button type="button" data-full="img/gallery/IMG_20260827_114815_005-l.jpg">
+                <img src="img/gallery/IMG_20260827_114815_005-m.jpg" srcset="img/gallery/IMG_20260827_114815_005-m.jpg 900w, img/gallery/IMG_20260827_114815_005-l.jpg 1800w" sizes="(min-width: 900px) 33vw, 100vw" alt="Interior view of a newly set window with flashing tape around the frame" loading="lazy" width="900" height="506">
+                <span class="cap"><span class="tag">Finished</span><br>Window set with full perimeter flashing</span>
+              </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Google reviews -->
+    <section class="section reviews" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <div>
+            <h2 id="reviews-title">What our clients say</h2>
+            <div class="rv-summary" id="rv-summary" hidden>
+              <strong id="rv-rating"></strong>
+              <span class="stars" id="rv-rating-stars" aria-hidden="true"></span>
+              <span id="rv-count"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="rv-layout">
+          <!-- Filled from Google by the script at the bottom; stays hidden until reviews load -->
+          <div class="rv-carousel reveal" id="rv-carousel" aria-roledescription="carousel" aria-label="Customer reviews from Google" hidden>
+            <ul class="rv-track" id="rv-track" aria-live="polite"></ul>
+            <div class="rv-controls">
+              <div class="rv-dots" id="rv-dots"></div>
+              <div class="rv-arrows">
+                <button type="button" class="lb-btn" id="rv-prev" aria-label="Previous review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+                <button type="button" class="lb-btn" id="rv-next" aria-label="Next review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+              </div>
+            </div>
+            <p class="rv-attrib">Reviews from <a id="rv-source" href="https://maps.google.com/?cid=12554666465722775113" target="_blank" rel="noopener">Google</a></p>
+          </div>
+
+          <aside class="rv-aside reveal">
+            <h3>Worked with us?</h3>
+            <p>Your review helps other Arizona homeowners and businesses find a team they can trust. It takes less than a minute.</p>
+            <a class="btn btn-light" href="https://g.page/r/CUk26hKiIjuuEBM/review" target="_blank" rel="noopener">
+              Leave a Google review
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="https://maps.google.com/?cid=12554666465722775113" target="_blank" rel="noopener" style="color:#fff;font-weight:600">Read all reviews on Google</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lead capture -->
+    <section class="section quote" id="quote" aria-labelledby="quote-title">
+      <div class="container quote-grid">
+        <div class="quote-info reveal">
+          <h2 id="quote-title">Get a free quote</h2>
+          <p>Tell us about your project and we will get back to you to schedule a visit and walk you through options.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <span><small>Call or text</small><a href="tel:+14804068351">(480) 406-8351</a></span>
+            </li>
+            <li>
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span><small>Office</small><b>1050 N Fairway Dr, Suite B112<br>Avondale, AZ 85323</b></span>
+            </li>
+            <li>
+              <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+              <span><small>Service area</small><b>Phoenix and all surrounding cities</b></span>
+            </li>
+          </ul>
+          <div class="map">
+            <iframe title="Map to Vanguard Window Solutions, 1050 N Fairway Dr, Avondale, AZ" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps?q=Vanguard+Window+Solutions+LLC&output=embed"></iframe>
+          </div>
+        </div>
+
+        <div class="form-card reveal">
+          <h3>Request your quote</h3>
+          <p>No cost, no obligation.</p>
+          <form id="lead-form" novalidate>
+            <div class="fields">
+              <div class="field half">
+                <label for="f-name">Full name</label>
+                <input id="f-name" name="name" type="text" autocomplete="name" required>
+              </div>
+              <div class="field half">
+                <label for="f-phone">Phone</label>
+                <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+              </div>
+              <div class="field half">
+                <label for="f-email">Email</label>
+                <input id="f-email" name="email" type="email" autocomplete="email">
+              </div>
+              <div class="field half">
+                <label for="f-city">City or ZIP</label>
+                <input id="f-city" name="city" type="text" autocomplete="address-level2" required>
+              </div>
+              <fieldset class="field">
+                <legend>Property type</legend>
+                <div class="choices">
+                  <label><input type="radio" name="property" value="Residential" checked><span>Residential</span></label>
+                  <label><input type="radio" name="property" value="Commercial"><span>Commercial</span></label>
+                </div>
+              </fieldset>
+              <fieldset class="field">
+                <legend>I need</legend>
+                <div class="choices">
+                  <label><input type="checkbox" name="service" value="Windows" checked><span>Windows</span></label>
+                  <label><input type="checkbox" name="service" value="Doors"><span>Doors</span></label>
+                  <label><input type="checkbox" name="service" value="New construction"><span>New construction</span></label>
+                  <label><input type="checkbox" name="service" value="Replacement"><span>Replacement</span></label>
+                </div>
+              </fieldset>
+              <div class="field">
+                <label for="f-msg">Project details <span style="font-weight:400;color:var(--carbonized)">(optional)</span></label>
+                <textarea id="f-msg" name="message" placeholder="Anything we should know"></textarea>
+              </div>
+              <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+            </div>
+            <button class="btn btn-primary" type="submit" id="f-submit">
+              Send my request
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <p class="form-note">Prefer to talk? Call <a href="tel:+14804068351">(480) 406-8351</a>.</p>
+            <div class="form-status" id="f-status" role="status" hidden></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-name">VANGUARD</p>
+      <div class="footer-grid">
+        <div>Vanguard Window Solutions LLC<br>Premium residential &amp; commercial windows and doors</div>
+        <div>1050 N Fairway Dr, Suite B112<br>Avondale, AZ 85323</div>
+        <div><a href="tel:+14804068351">(480) 406-8351</a><br><a href="https://g.page/r/CUk26hKiIjuuEBM/review" target="_blank" rel="noopener">Review us on Google</a></div>
+      </div>
+      <p class="footer-copy">&copy; <span id="y">2026</span> Vanguard Window Solutions LLC. Serving Phoenix and the surrounding cities.</p>
+    </div>
+  </footer>
+
+  <!-- Sticky actions on phones -->
+  <div class="call-bar">
+    <a class="btn btn-outline" href="tel:+14804068351">Call</a>
+    <a class="btn btn-primary" href="#quote">Free quote</a>
+  </div>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Project photo">
+    <div class="lb-stage" id="lb-stage">
+      <img id="lb-img" alt="">
+      <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <div class="lb-bar">
+      <p class="lb-caption"><span class="lb-count" id="lb-count"></span><span id="lb-caption"></span></p>
+      <div class="lb-nav">
+        <button type="button" class="lb-btn" id="lb-prev" aria-label="Previous photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+        <button type="button" class="lb-btn" id="lb-next" aria-label="Next photo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const GOOGLE_MAPS_API_KEY = "AIzaSyCsJivaDDzqHryNLFjIKx2iq1JWpDqhZHU";
+    const PLACE_ID = "ChIJbVXUZk20EUwRSTbqEqIiO64";
+    const MIN_RATING = 4;          // show 4 and 5 star reviews
+    const AUTOPLAY_MS = 7000;
+    const FORM_ENDPOINT = "";
+    const OFFICE_PHONE = "+14804068351";
+
+    document.body.classList.remove("no-js");
+    document.getElementById("y").textContent = new Date().getFullYear();
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    /* ---------- Header shadow on scroll ---------- */
+    const header = document.querySelector(".site-header");
+    const onScroll = () => header.classList.toggle("is-scrolled", window.scrollY > 8);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+
+    /* ---------- Reveal on scroll ---------- */
+    if ("IntersectionObserver" in window && !reduceMotion) {
+      const io = new IntersectionObserver(entries => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); }
+        });
+      }, { rootMargin: "0px 0px -8% 0px" });
+      document.querySelectorAll(".reveal").forEach((el, i) => {
+        el.style.transitionDelay = (el.closest(".gallery") ? (i % 3) * 80 : 0) + "ms";
+        io.observe(el);
+      });
+    } else {
+      document.querySelectorAll(".reveal").forEach(el => el.classList.add("is-in"));
+    }
+
+    /* ---------- Gallery filters ---------- */
+    const items = [...document.querySelectorAll("#gallery li")];
+    const filterButtons = document.querySelectorAll(".filters button");
+    function applyFilter(cat) {
+      const visible = items.filter(li => cat === "all" || li.dataset.cat === cat);
+      // featured photo fills 4 cells, the rest 1 each; widen the last ones until the 4-column grid has no gaps
+      const spare = (4 - (visible.length + 3) % 4) % 4;
+      items.forEach(li => {
+        const pos = visible.indexOf(li);
+        li.hidden = pos === -1;
+        li.classList.toggle("is-featured", pos === 0);
+        li.classList.toggle("is-wide", pos > 0 && pos >= visible.length - spare);
+      });
+      filterButtons.forEach(b => b.setAttribute("aria-pressed", b.dataset.filter === cat ? "true" : "false"));
+    }
+    filterButtons.forEach(b => b.addEventListener("click", () => applyFilter(b.dataset.filter)));
+    applyFilter("all");
+
+    /* ---------- Lightbox ---------- */
+    const lb = document.getElementById("lightbox");
+    const lbImg = document.getElementById("lb-img");
+    let lbList = [], lbIndex = 0;
+
+    function lbShow(i) {
+      lbIndex = (i + lbList.length) % lbList.length;
+      const btn = lbList[lbIndex];
+      const thumb = btn.querySelector("img");
+      lbImg.src = btn.dataset.full;
+      lbImg.alt = thumb.alt;
+      document.getElementById("lb-caption").textContent = btn.querySelector(".cap").lastChild.textContent;
+      document.getElementById("lb-count").textContent = (lbIndex + 1) + " / " + lbList.length;
+    }
+    document.querySelectorAll("#gallery button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        lbList = items.filter(li => !li.hidden).map(li => li.querySelector("button"));
+        lbShow(lbList.indexOf(btn));
+        if (typeof lb.showModal === "function") lb.showModal();
+        else window.open(btn.dataset.full, "_blank");
+      });
+    });
+    document.getElementById("lb-close").addEventListener("click", () => lb.close());
+    document.getElementById("lb-prev").addEventListener("click", () => lbShow(lbIndex - 1));
+    document.getElementById("lb-next").addEventListener("click", () => lbShow(lbIndex + 1));
+    lb.addEventListener("keydown", e => {
+      if (e.key === "ArrowLeft") lbShow(lbIndex - 1);
+      if (e.key === "ArrowRight") lbShow(lbIndex + 1);
+    });
+    lb.addEventListener("click", e => { if (e.target === lb || e.target.id === "lb-stage") lb.close(); });
+    addSwipe(document.getElementById("lb-stage"), dir => lbShow(lbIndex + dir));
+
+    function addSwipe(el, onSwipe) {
+      let startX = null;
+      el.addEventListener("pointerdown", e => { startX = e.clientX; });
+      el.addEventListener("pointerup", e => {
+        if (startX === null) return;
+        const dx = e.clientX - startX;
+        startX = null;
+        if (Math.abs(dx) > 40) onSwipe(dx < 0 ? 1 : -1);
+      });
+    }
+
+    /* ---------- Lead form ---------- */
+    const form = document.getElementById("lead-form");
+    const status = document.getElementById("f-status");
+    function showStatus(kind, msg) {
+      status.className = "form-status " + kind;
+      status.textContent = msg;
+      status.hidden = false;
+    }
+    form.addEventListener("submit", async e => {
+      e.preventDefault();
+      if (form._gotcha.value) return;
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      const data = new FormData(form);
+      const services = data.getAll("service").join(", ") || "Not specified";
+      const lead = {
+        name: data.get("name").trim(),
+        phone: data.get("phone").trim(),
+        email: data.get("email").trim(),
+        city: data.get("city").trim(),
+        property: data.get("property"),
+        services,
+        message: data.get("message").trim()
+      };
+
+      if (!FORM_ENDPOINT) {
+        const body = "Quote request from " + lead.name + " (" + lead.phone + ")" +
+          "\n" + lead.property + " in " + lead.city + "\nNeeds: " + services +
+          (lead.message ? "\n" + lead.message : "");
+        window.location.href = "sms:" + OFFICE_PHONE + "?&body=" + encodeURIComponent(body);
+        showStatus("ok", "Your messaging app should open with the request ready to send. If it does not, call us at (480) 406-8351.");
+        return;
+      }
+
+      const submit = document.getElementById("f-submit");
+      submit.disabled = true;
+      try {
+        const res = await fetch(FORM_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json", "Accept": "application/json" },
+          body: JSON.stringify({ ...lead, _subject: "New quote request: " + lead.name })
+        });
+        if (!res.ok) throw new Error(res.status);
+        form.reset();
+        showStatus("ok", "Thanks, " + lead.name.split(" ")[0] + ". We received your request and will be in touch soon.");
+      } catch (err) {
+        showStatus("err", "Something went wrong sending your request. Please call us at (480) 406-8351.");
+      } finally {
+        submit.disabled = false;
+      }
+    });
+
+    /* ---------- Google reviews (Maps JavaScript API, Places library) ---------- */
+    const STAR = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg>';
+
+    function starsHTML(rating) {
+      const full = Math.round(rating);
+      return Array.from({ length: 5 }, (_, i) => i < full ? STAR : STAR.replace("<svg", '<svg class="off"')).join("");
+    }
+
+    function buildSlide(review) {
+      const li = document.createElement("li");
+      li.className = "rv-slide";
+      li.setAttribute("role", "group");
+      li.setAttribute("aria-roledescription", "slide");
+
+      const stars = document.createElement("span");
+      stars.className = "stars";
+      stars.innerHTML = starsHTML(review.rating);
+      stars.setAttribute("aria-label", review.rating + " out of 5 stars");
+
+      const text = document.createElement("p");
+      text.className = "rv-text";
+      text.textContent = review.text;
+
+      const author = document.createElement("div");
+      author.className = "rv-author";
+      const name = (review.authorAttribution && review.authorAttribution.displayName) || "Google user";
+      const photo = review.authorAttribution && review.authorAttribution.photoURI;
+      if (photo) {
+        const img = document.createElement("img");
+        img.src = photo;
+        img.alt = "";
+        img.referrerPolicy = "no-referrer";
+        img.loading = "lazy";
+        author.append(img);
+      } else {
+        const initial = document.createElement("span");
+        initial.className = "rv-initial";
+        initial.textContent = name.charAt(0).toUpperCase();
+        author.append(initial);
+      }
+      const meta = document.createElement("span");
+      const b = document.createElement("b");
+      b.textContent = name;
+      meta.append(b, review.relativePublishTimeDescription || "");
+      author.append(meta);
+
+      li.append(stars, text, author);
+      return li;
+    }
+
+    function startCarousel(root, slides) {
+      const dotsBox = document.getElementById("rv-dots");
+      const dots = slides.map((_, i) => {
+        const dot = document.createElement("button");
+        dot.type = "button";
+        dot.setAttribute("aria-label", "Show review " + (i + 1));
+        dot.addEventListener("click", () => { go(i); restart(); });
+        dotsBox.append(dot);
+        return dot;
+      });
+
+      let index = 0;
+      let timer = null;
+
+      function go(i) {
+        index = (i + slides.length) % slides.length;
+        slides.forEach((s, n) => {
+          s.classList.toggle("is-active", n === index);
+          s.setAttribute("aria-label", (n + 1) + " of " + slides.length);
+        });
+        dots.forEach((d, n) => d.setAttribute("aria-current", n === index ? "true" : "false"));
+      }
+      function stop() { clearInterval(timer); timer = null; }
+      function restart() {
+        stop();
+        if (!reduceMotion && slides.length > 1) timer = setInterval(() => go(index + 1), AUTOPLAY_MS);
+      }
+
+      document.getElementById("rv-prev").addEventListener("click", () => { go(index - 1); restart(); });
+      document.getElementById("rv-next").addEventListener("click", () => { go(index + 1); restart(); });
+      root.addEventListener("mouseenter", stop);
+      root.addEventListener("mouseleave", restart);
+      root.addEventListener("focusin", stop);
+      root.addEventListener("focusout", restart);
+      addSwipe(document.getElementById("rv-track"), dir => { go(index + dir); restart(); });
+
+      if (slides.length < 2) root.querySelector(".rv-controls").hidden = true;
+      go(0);
+      restart();
+    }
+
+    window.initReviews = async function () {
+      try {
+        const { Place } = await google.maps.importLibrary("places");
+        const place = new Place({ id: PLACE_ID });
+        await place.fetchFields({ fields: ["rating", "userRatingCount", "reviews", "googleMapsURI"] });
+
+        if (place.rating) {
+          const value = place.rating.toFixed(1);
+          const count = place.userRatingCount ? place.userRatingCount + " Google reviews" : "on Google";
+          document.getElementById("rv-rating").textContent = value;
+          document.getElementById("rv-rating-stars").innerHTML = starsHTML(place.rating);
+          document.getElementById("rv-count").textContent = count;
+          document.getElementById("rv-summary").hidden = false;
+          document.getElementById("hero-rating-value").textContent = value;
+          document.getElementById("hero-rating-stars").innerHTML = starsHTML(place.rating);
+          document.getElementById("hero-rating-count").textContent = count;
+          document.getElementById("hero-rating").hidden = false;
+        }
+        if (place.googleMapsURI) document.getElementById("rv-source").href = place.googleMapsURI;
+
+        const reviews = (place.reviews || []).filter(r => r.rating >= MIN_RATING && r.text);
+        if (!reviews.length) return;
+
+        const root = document.getElementById("rv-carousel");
+        const slides = reviews.map(buildSlide);
+        document.getElementById("rv-track").append(...slides);
+        root.hidden = false;
+        root.classList.add("is-in");
+        startCarousel(root, slides);
+      } catch (err) {
+        console.warn("Google reviews could not be loaded:", err);
+      }
+    };
+
+    if (GOOGLE_MAPS_API_KEY !== "YOUR_API_KEY" && PLACE_ID !== "YOUR_PLACE_ID") {
+      const s = document.createElement("script");
+      s.src = "https://maps.googleapis.com/maps/api/js?key=" + encodeURIComponent(GOOGLE_MAPS_API_KEY) +
+              "&v=weekly&loading=async&callback=initReviews";
+      s.async = true;
+      document.head.append(s);
+    }
+  </script>
+</body>
+</html>
